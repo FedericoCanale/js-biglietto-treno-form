@@ -15,3 +15,21 @@
 	•	console.log()
 	•	.toFixed(2)
     */
+
+// Prezzo per km
+
+
+// Prendo il bottone
+
+// Aggiungo evento click
+
+// Recupero i valori dagli input
+  
+// Calcolo prezzo base
+  
+
+// Applico eventuali sconti
+  
+
+// Mostro il risultato finale in console
+  
