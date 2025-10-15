@@ -79,8 +79,8 @@ const outType = document.getElementById('outType');
 const outPrice = document.getElementById('outPrice');
 
 // Gestisco il submit del form
-
-
+form.addEventListener('submit', (event) => {
+event.preventDefault();});
 // Calcolo prezzo e tipo biglietto
 
 
