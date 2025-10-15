@@ -77,6 +77,10 @@ const card = document.getElementById('ticketCard');
 const outName = document.getElementById('outName');
 const outType = document.getElementById('outType');
 const outPrice = document.getElementById('outPrice');
+const outCar = document.getElementById('outCar');
+const outCode = document.getElementById('outCode');
+
+const resetBtn = document.getElementById('resetBtn');
 
 // Gestisco il submit del form
 form.addEventListener('submit', (event) => {
@@ -108,4 +112,13 @@ form.addEventListener('submit', (event) => {
     outPrice.textContent = `€ ${price.toFixed(2)}`;
     outCar.textContent = car;
     outCode.textContent = code;
+
+    card.hidden = false;
+});
+resetBtn.addEventListener('click', () => {
+
+    form.reset();
+
+
+    card.hidden = true;
 });
