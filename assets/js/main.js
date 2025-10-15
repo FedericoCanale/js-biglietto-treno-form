@@ -97,9 +97,15 @@ form.addEventListener('submit', (event) => {
     } else {
         type = 'Prezzo Standard';
     }
+    // 🔹 Genero carrozza casuale (da 1 a 10)
+    const car = Math.floor(Math.random() * 10) + 1;
 
+    // 🔹 Genero numero biglietto casuale di 6 cifre
+    const code = Math.floor(100000 + Math.random() * 900000);
     // Output nella card
     outName.textContent = name;
     outType.textContent = type;
     outPrice.textContent = `€ ${price.toFixed(2)}`;
+    outCar.textContent = car;
+    outCode.textContent = code;
 });
