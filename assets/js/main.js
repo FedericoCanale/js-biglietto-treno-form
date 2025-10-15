@@ -65,9 +65,23 @@ Tools
 */
 
 // Prezzo al km
-
+const priceKm = 0.21;
 
 // Prendo gli elementi che mi servono
+const form = document.getElementById('ticketForm');
+const nameEl = document.getElementById('userName');
+const kmEl = document.getElementById('km');
+const ageEl = document.getElementById('age');
+
+const card = document.getElementById('ticketCard');
+const outName = document.getElementById('outName');
+const outType = document.getElementById('outType');
+const outPrice = document.getElementById('outPrice');
+
 // Gestisco il submit del form
+
+
 // Calcolo prezzo e tipo biglietto
+
+
 // Output nella card
