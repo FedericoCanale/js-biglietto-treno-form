@@ -70,18 +70,57 @@
             </div>
         </div>
         <!-- "Biglietto" -->
-        <div id="ticketCard" hidden>
-            <h2>Biglietto Treno</h2>
-            <p><strong>Nome passeggero:</strong> <span
-                    id="outName"></span></p>
-            <p><strong>Tipo biglietto:</strong> <span
-                    id="outType"></span></p>
-            <p><strong>Carrozza:</strong> <span id="outCar"></span></p>
-            <p><strong>Codice biglietto:</strong> <span
-                    id="outCode"></span></p>
-            <hr>
-            <p><strong>Prezzo finale:</strong> <span
-                    id="outPrice"></span></p>
+        <div class="container px-2 px-md-3">
+            <div id="ticketCard" class="card mx-auto shadow-sm border-0 mt-4"
+                style="max-width: 900px;" hidden>
+                <div
+                    class="card-header bg-primary-light text-primary text-center py-3">
+                    <h2 class="h5 mb-0">Il tuo biglietto</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <!-- Colonna sinistra: Nome -->
+                        <div
+                            class="col-md-5 text-center text-md-start mb-3 mb-md-0">
+                            <p class="text-muted mb-1">Nome passeggero</p>
+                            <h3 class="fw-bold mb-0" id="outName"></h3>
+                        </div>
+
+                        <!-- Colonna destra: Info biglietto -->
+                        <div class="col-md-7">
+                            <div class="row mb-2">
+                                <div class="col-6 text-muted">Tipo
+                                    biglietto</div>
+                                <div class="col-6 text-end fw-semibold"
+                                    id="outType"></div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-6 text-muted">Carrozza</div>
+                                <div class="col-6 text-end fw-semibold"
+                                    id="outCar"></div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-6 text-muted">Codice
+                                    biglietto</div>
+                                <div class="col-6 text-end fw-semibold"
+                                    id="outCode"></div>
+                            </div>
+
+                            <hr class="my-3">
+
+                            <div
+                                class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">Prezzo finale</span>
+                                <span id="outPrice"
+                                    class="fs-4 fw-bold text-primary"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="./assets/js/main.js"></script>
     </body>
