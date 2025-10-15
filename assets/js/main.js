@@ -19,7 +19,7 @@
     */
 
 // Prezzo per km
-const priceKm = 0.21;
+/*const priceKm = 0.21;
 
 // Prendo il bottone
 const btn = document.getElementById('countBtn');
@@ -47,6 +47,7 @@ btn.addEventListener('click', function() {
 // Mostro il risultato finale in console
   console.log(`Il prezzo totale del biglietto è: €${priceTotal.toFixed(2)}`);
 });
+*/
 
 // Milestone 2
 /* To Do List 
@@ -62,3 +63,11 @@ Tools
 •	Number(), if / else if / else
 •	toFixed(2), textContent
 */
+
+// Prezzo al km
+
+
+// Prendo gli elementi che mi servono
+// Gestisco il submit del form
+// Calcolo prezzo e tipo biglietto
+// Output nella card
