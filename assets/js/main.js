@@ -2,20 +2,20 @@
 
 /* To Do List
     1. 	Creare due file: index.html e main.js.
-	2.	Creare in HTML due input e un bottone.
-	4.	In JS recuperare i valori e calcolare il prezzo base (km × 0.21).
-	5.	Applicare:
+    2.	Creare in HTML due input e un bottone.
+    4.	In JS recuperare i valori e calcolare il prezzo base (km × 0.21).
+    5.	Applicare:
         •	sconto 20% se eta < 18
         •	sconto 40% se eta > 65
         •	nessuno sconto se eta è tra 18 e 65
-	6.	Stampare il risultato in console.
+    6.	Stampare il risultato in console.
     Tools
     •	getElementById()
-	•	addEventListener()
-	•	Number()
-	•	if / else if / else
-	•	console.log()
-	•	.toFixed(2)
+    •	addEventListener()
+    •	Number()
+    •	if / else if / else
+    •	console.log()
+    •	.toFixed(2)
     */
 
 // Prezzo per km
@@ -80,8 +80,22 @@ const outPrice = document.getElementById('outPrice');
 
 // Gestisco il submit del form
 form.addEventListener('submit', (event) => {
-event.preventDefault();});
-// Calcolo prezzo e tipo biglietto
+    event.preventDefault();
 
-
+    const name = nameEl.value();
+    const km = Number(kmEl.value);
+    const age = Number(ageEl.value);
+    // Calcolo prezzo e tipo biglietto
+    let price = km * priceKm;
+    let type = '';
+    if (age < 18) {
+        price *= 0.8;
+        type = 'Sconto Under 18';
+    } else if (age > 65) {
+        price *= 0.6;
+        type = 'Sconto Over 65';
+    }else {
+        type = 'Prezzo Standard';
+    }
+});
 // Output nella card
