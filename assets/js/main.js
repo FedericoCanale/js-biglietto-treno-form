@@ -1,3 +1,5 @@
+// Milestone 1
+
 /* To Do List
     1. 	Creare due file: index.html e main.js.
 	2.	Creare in HTML due input e un bottone.
@@ -45,3 +47,18 @@ btn.addEventListener('click', function() {
 // Mostro il risultato finale in console
   console.log(`Il prezzo totale del biglietto è: €${priceTotal.toFixed(2)}`);
 });
+
+// Milestone 2
+/* To Do List 
+1  Aggiungere form con input nome, km, età + submit
+2. prendere submit e validare i dati
+3. Calcolare prezzo base (km × 0.21)
+4. Applicare sconti (20% <18, 40% >65, 0% tra 18–65)
+5. Stampare recap + prezzo (2 decimali) in pagina
+Tools
+•	getElementById()
+•	addEventListener('submit', ...)
+•	preventDefault()
+•	Number(), if / else if / else
+•	toFixed(2), textContent
+*/
