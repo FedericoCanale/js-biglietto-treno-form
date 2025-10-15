@@ -82,7 +82,7 @@ const outPrice = document.getElementById('outPrice');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const name = nameEl.value();
+    const name = nameEl.value;
     const km = Number(kmEl.value);
     const age = Number(ageEl.value);
     // Calcolo prezzo e tipo biglietto
@@ -94,8 +94,12 @@ form.addEventListener('submit', (event) => {
     } else if (age > 65) {
         price *= 0.6;
         type = 'Sconto Over 65';
-    }else {
+    } else {
         type = 'Prezzo Standard';
     }
+
+    // Output nella card
+    outName.textContent = name;
+    outType.textContent = type;
+    outPrice.textContent = `€ ${price.toFixed(2)}`;
 });
-// Output nella card
