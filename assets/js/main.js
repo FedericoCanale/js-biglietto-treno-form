@@ -107,11 +107,11 @@ form.addEventListener('submit', (event) => {
     // 🔹 Genero numero biglietto casuale di 6 cifre
     const code = Math.floor(100000 + Math.random() * 900000);
     // Output nella card
-    outName.textContent = name;
-    outType.textContent = type;
-    outPrice.textContent = `€ ${price.toFixed(2)}`;
-    outCar.textContent = car;
-    outCode.textContent = code;
+    outName.innerText = name;
+    outType.innerText = type;
+    outPrice.innerText = `€ ${price.toFixed(2)}`;
+    outCar.innerText = car;
+    outCode.innerText = code;
 
     card.hidden = false;
 });
